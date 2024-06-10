@@ -1,0 +1,40 @@
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+.gallery {
+  list-style-type: none;
+  margin: 24px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  row-gap: 24px;
+}
+
+.gallery li {
+  width: calc(100% / 3 - 24px);
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  transform: scale(1.04);
+}
+
+.original-image {
+  display: block;
+  max-height: calc(100vh - 48px);
+}
